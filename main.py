@@ -4,13 +4,16 @@ from asana.rest import ApiException
 import pandas as pd
 import plotly.express as px
 import datetime
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 configuration = asana.Configuration()
-configuration.access_token = 'ENTER_ACCESS_TOKEN'
+configuration.access_token = os.getenv('ASANA_TOKEN')
 api_client = asana.ApiClient(configuration)
 tasks_api_instance = asana.TasksApi(api_client)
 
-project_id = 'ENTER_PROJECT_ID'
+project_id = os.getenv('ASANA_PROJECT')
 opt_fields = ["completed", "name", "custom_fields", "assignee", "projects"]
 
 @st.cache_data(ttl=60, show_spinner=False)  # Cache for one hour
