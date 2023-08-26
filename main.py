@@ -6,11 +6,11 @@ import plotly.express as px
 import datetime
 
 configuration = asana.Configuration()
-configuration.access_token = '1/1196819485374674:440c5424e9c78cf7145b6da001b9ac71'
+configuration.access_token = 'ENTER_ACCESS_TOKEN'
 api_client = asana.ApiClient(configuration)
 tasks_api_instance = asana.TasksApi(api_client)
 
-project_id = '1199149056770838'
+project_id = 'ENTER_PROJECT_ID'
 opt_fields = ["completed", "name", "custom_fields", "assignee", "projects"]
 
 @st.cache_data(ttl=60, show_spinner=False)  # Cache for one hour
