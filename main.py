@@ -77,7 +77,7 @@ def main():
             {
                 
                 "type": "pie",
-                "radius": ["50%", "90%"],
+                "radius": ["55%", "90%"],
                 "avoidLabelOverlap": False,
                 "itemStyle": {
                     "borderRadius": 10,
@@ -104,7 +104,7 @@ def main():
             {
                 
                 "type": "pie",
-                "radius": ["50%", "90%"],
+                "radius": ["55%", "90%"],
                 "avoidLabelOverlap": False,
                 "itemStyle": {
                     "borderRadius": 10,
