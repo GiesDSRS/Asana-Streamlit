@@ -72,7 +72,7 @@ def main():
         "title": {"text": "Task by Department", "left": "center"},
         "title": {"text": "Task by Department", "subtext": total_tasks, "left": "center", "top": "center"},
         "tooltip": {"trigger": "item"},
-        "legend": {"top": "center", "left": "left", "orient": "vertical"},
+        "legend": {"top": "top", "left": "left", "orient": "horizontal", "padding": 0, "selectedMode": False, "width": "300"},
         "series": [
             {
                 
@@ -99,7 +99,7 @@ def main():
         "title": {"text": "Task by Department", "left": "center"},
         "title": {"text": "Task Completion status", "subtext": total_tasks, "left": "center", "top": "center"},
         "tooltip": {"trigger": "item"},
-        "legend": {"top": "center", "left": "left", "orient": "vertical"},
+        "legend": {"top": "top", "left": "left", "orient": "horizontal", "selectedMode": False},
         "series": [
             {
                 
