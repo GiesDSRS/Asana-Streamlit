@@ -1,2 +1,4 @@
+[server]
+baseUrlPath = "apps/dashboard"
 [theme]
 backgroundColor="white"
