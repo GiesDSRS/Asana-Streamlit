@@ -38,7 +38,7 @@ def prepare_dataframe(data):
     return df[['gid', 'name', 'completed_status', 'department']]
 
 def main():
-    st.title("DSRS Tasks Dashboard")
+    # st.title("DSRS Tasks Dashboard")
 
     # Displaying timestamp for the last fetched data
     current_time = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
